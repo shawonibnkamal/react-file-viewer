@@ -23,9 +23,9 @@ inquirer.prompt([
     name: 'publish',
     message: 'Select a version to publish. This will run all tests and build first.',
     default: 0,
-    choices: ['Abort', 'patch', 'minor', 'major']
-  }
-]).then(function(answers) {
+    choices: ['Abort', 'patch', 'minor', 'major'],
+  },
+]).then((answers) => {
   const answer = answers.publish;
 
   if (answer === 'Abort') {
@@ -34,10 +34,10 @@ inquirer.prompt([
   }
 
   const execOpts = {
-    stdio: [0, 1, 2]
+    stdio: [0, 1, 2],
   };
 
-  //run tests
+  // run tests
   try {
     console.log(runColor('running tests'));
     execSync(jestCommand);

@@ -7,13 +7,13 @@ import FileViewer from 'components/file-viewer';
 describe('file-viewer', () => {
   it('renders without crashing', () => {
     mount(
-      <FileViewer fileType='fake' filePath='fake/path' />
+      <FileViewer fileType="fake" filePath="fake/path" />,
     );
   });
 
   it('renders without crashing with visibility check disabled', () => {
     mount(
-      <FileViewer fileType='fake' filePath='fake/path' disableVisibilityCheck />
+      <FileViewer fileType="fake" filePath="fake/path" disableVisibilityCheck />,
     );
   });
 });

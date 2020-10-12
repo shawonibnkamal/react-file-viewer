@@ -7,5 +7,5 @@ module.exports = {
   },
   getCacheKey(fileData, filename) {
     return 'cssTransform';
-  }
+  },
 };

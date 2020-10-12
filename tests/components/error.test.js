@@ -8,7 +8,7 @@ import Error from 'components/error';
 describe('Error component', () => {
   it('matches stored snapshot', () => {
     const tree = renderer.create(
-      <Error />
+      <Error />,
     ).toJSON();
 
     expect(tree).toMatchSnapshot();
