@@ -22,8 +22,8 @@ import pdf from '../example_files/sample.pdf';
 
 ReactDOM.render(
   <FileViewer
-    fileType="docx"
-    filePath={docx}
+    fileType="csv"
+    filePath={csv}
   />,
   window.document.getElementById('app')
 );
