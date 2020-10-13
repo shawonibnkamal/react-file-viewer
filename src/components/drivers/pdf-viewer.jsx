@@ -67,7 +67,7 @@ export class PDFPage extends React.Component {
           <VisibilitySensor onChange={this.onChange} partialVisibility >
             <canvas ref={node => this.canvas = node} width="670" height="870" />
           </VisibilitySensor>
-            )
+        )
         }
       </div>
     );

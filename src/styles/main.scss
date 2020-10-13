@@ -4,6 +4,7 @@
   height: 100%;
   display: flex;
   flex-direction: row;
+  overflow-y: hidden;
 
   .pg-viewer {
     height: 100%;
@@ -30,6 +31,59 @@
     height: 100%;
     flex-grow: 1;
   }
+
+  .pdf-controls-container {
+    text-align: center;
+    background-color: #393e41;
+    padding: 10px 0 10px 0;
+    color: #fff;
+  }
+
+  .view-control {
+    display: inline !important;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    margin: 5px;  
+  }
+
+  .view-control i {
+    font-style: normal;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .view-control:hover {
+    background-color: #575c5f;
+    cursor: pointer;
+  }
+
+  .view-control .zoom-in:after {
+    content: "+";
+    
+  }
+
+  .view-control .zoom-out:after {
+    content: "-";
+  }
+
+  .view-control .zoom-reset:after {
+    content: "Reset";
+  }
+
+  .pdf-viewer-container {
+    height: 100%;
+  }
+
+  .pdf-viewer {
+    text-align: center;
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+  } 
+
+  .spreadsheet-viewer {
+    overflow: scroll;
+  }
 }
 .react-grid-Container {
   margin: auto;
@@ -43,3 +97,7 @@
 #app {
   background: pink;
 }
+
+
+
+
